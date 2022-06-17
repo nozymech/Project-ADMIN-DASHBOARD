@@ -15,6 +15,7 @@ body, html {
 .header{
     background-color: rgb(255, 255, 255);
     grid-column: 2/3;
+
 }
 
 .side-bar {
@@ -168,4 +169,138 @@ body, html {
     width: fit-content;
     margin-top: 20px;
 }
-        
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr ;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(227, 232, 239);
+    justify-items: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+
+.projects{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-top:30px;
+
+}
+
+.announcements{
+    grid-column: 2/3;
+    padding-top:30px;
+
+}
+
+.trending{
+    padding-top:30px;
+}
+
+.heading {
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    justify-items:start;
+    padding-left: 20px;
+    height: 217px;
+    border-radius: 10px;
+    border-left: 7px solid rgb(231,182,74);
+}
+
+.text{
+    display: block;
+    text-align: left;
+    font-size: small;
+    color: gray;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.announcement-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.announcement{
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 3px solid rgb(227, 232, 239);
+}
+
+.announcement-card :last-child{
+    border-bottom: none;
+}
+
+
+
+.trending-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 65px;
+}
+
+.trending-account{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.announcement-heading{
+    font-size: small;
+}
+
+.announcement-text{
+    font-size:small;
+    color: rgb(180, 180, 180);
+}
+
+.trending-text{
+    color: rgb(180, 180, 180);
+    font-size: smaller;
+}
+
+.trending-name{
+    font-size: small;
+}
+
+.trending-icons{
+    padding-right: 10px;
+}
+
+.card-icons{
+    display: flex;
+    padding-left: 200px;
+    padding-bottom: 25px;
+}
+
+.card-icon{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
